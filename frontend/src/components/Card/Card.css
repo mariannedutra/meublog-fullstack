@@ -1,0 +1,42 @@
+/* Estilos do Card */
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card-clicavel {
+  cursor: pointer;
+}
+
+.card-clicavel:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+  margin: 0 0 12px 0;
+  color: #111827;
+  font-size: 24px;
+}
+
+.card h3 {
+  margin: 0 0 8px 0;
+  color: #1f2937;
+  font-size: 20px;
+}
+
+.card p {
+  margin: 0;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.card-data {
+  color: #9ca3af;
+  font-size: 14px;
+  margin-top: 12px;
+}

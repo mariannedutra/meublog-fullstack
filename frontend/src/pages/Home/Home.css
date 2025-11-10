@@ -1,0 +1,64 @@
+/* Estilos da Página Home */
+
+.home {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.home-header h1 {
+  margin: 0;
+  color: #111827;
+  font-size: 36px;
+}
+
+.postagens-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.vazio {
+  text-align: center;
+  padding: 80px 20px;
+  color: #6b7280;
+}
+
+.vazio p {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.erro-mensagem {
+  background-color: #fee2e2;
+  border: 1px solid #ef4444;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.erro-mensagem p {
+  color: #991b1b;
+  margin-bottom: 16px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .home-header h1 {
+    font-size: 28px;
+  }
+
+  .postagens-grid {
+    grid-template-columns: 1fr;
+  }
+}

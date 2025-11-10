@@ -1,0 +1,62 @@
+/* Estilos da Página de Detalhes */
+
+.postagem-detalhes {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.postagem-card {
+  margin: 24px 0;
+}
+
+.postagem-card h1 {
+  margin: 0 0 12px 0;
+  color: #111827;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.postagem-data {
+  color: #9ca3af;
+  font-size: 14px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.postagem-conteudo {
+  color: #374151;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.postagem-conteudo p {
+  margin: 16px 0;
+}
+
+.postagem-acoes {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .postagem-card h1 {
+    font-size: 24px;
+  }
+
+  .postagem-conteudo {
+    font-size: 16px;
+  }
+
+  .postagem-acoes {
+    flex-direction: column;
+  }
+
+  .postagem-acoes button {
+    width: 100%;
+  }
+}

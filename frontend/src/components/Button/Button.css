@@ -1,0 +1,54 @@
+/* Estilos do Botão */
+
+.botao {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.botao:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.botao:active {
+  transform: translateY(0);
+}
+
+.botao:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.botao-primario {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.botao-primario:hover:not(:disabled) {
+  background-color: #4338ca;
+}
+
+.botao-secundario {
+  background-color: #6b7280;
+  color: white;
+}
+
+.botao-secundario:hover:not(:disabled) {
+  background-color: #4b5563;
+}
+
+.botao-perigo {
+  background-color: #dc2626;
+  color: white;
+}
+
+.botao-perigo:hover:not(:disabled) {
+  background-color: #b91c1c;
+}

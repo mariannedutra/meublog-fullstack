@@ -1,0 +1,21 @@
+/* Estilos Globais da Aplicação */
+
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Estilo para mensagens de erro globais */
+.erro-mensagem {
+  background-color: #fee2e2;
+  border: 1px solid #ef4444;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.erro-mensagem p {
+  color: #991b1b;
+  margin-bottom: 16px;
+}
