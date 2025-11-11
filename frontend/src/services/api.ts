@@ -5,7 +5,7 @@
  * Cada função retorna uma Promise para facilitar o uso com async/await.
  */
 
-import { Postagem, NovaPostagem, AtualizarPostagem } from '../types';
+import type { Postagem, NovaPostagem, AtualizarPostagem } from '../types';
 
 // URL base da API - ajuste se necessário
 const API_URL = 'http://localhost:3001';

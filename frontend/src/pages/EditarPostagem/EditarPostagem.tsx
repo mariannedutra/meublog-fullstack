@@ -7,7 +7,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { buscarPostagemPorId, atualizarPostagem } from '../../services/api';
-import { Postagem } from '../../types';
+import { type Postagem } from '../../types';
 import FormularioPostagem from '../../components/FormularioPostagem/FormularioPostagem';
 import Button from '../../components/Button/Button';
 import Loading from '../../components/Loading/Loading';

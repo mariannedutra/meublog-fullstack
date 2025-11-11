@@ -7,7 +7,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { buscarPostagens } from '../../services/api';
-import { Postagem } from '../../types';
+import { type Postagem } from '../../types';
 import Card from '../../components/Card/Card';
 import Button from '../../components/Button/Button';
 import Loading from '../../components/Loading/Loading';
