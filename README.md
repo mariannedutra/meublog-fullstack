@@ -243,10 +243,10 @@ Formulário completo e validado para criar/editar postagens.
 - **TypeScript**: Tipagem estática para maior segurança
 - **Componentização**: Componentes reutilizáveis e bem organizados
 - **React Router**: Navegação SPA (Single Page Application)
-- **Fetch API**: Requisições HTTP para o backend
+- **Axios**: Requisições HTTP para o backend
 - **CSS Modular**: Cada componente com seu próprio CSS
 
-## 🎓 Dicas para Estudantes
+## 🎓 Dicas
 
 ### Para Começar
 1. Estude primeiro o backend - entenda como a API funciona
@@ -259,16 +259,13 @@ Formulário completo e validado para criar/editar postagens.
 2. Implemente um sistema de categorias
 3. Adicione busca de postagens por título
 4. Crie paginação para a lista de postagens
-5. Adicione um contador de visualizações
 
 ### Próximos Passos
-1. Adicionar autenticação de usuários
-2. Implementar upload de imagens
-3. Criar sistema de comentários
-4. Adicionar editor de texto rico
-5. Implementar sistema de likes
-6. Adicionar modo escuro
-7. Criar testes automatizados
+1. Implementar upload de imagens
+2. Adicionar modo escuro
+3. Adicionar autenticação de usuários
+4. Implementar página/sistema de favoritos
+5. Criar sistema de comentários 
 
 ## 🐛 Solução de Problemas
 
@@ -290,18 +287,6 @@ Formulário completo e validado para criar/editar postagens.
 ## 📝 Licença
 
 Este projeto é de código aberto e está disponível para fins educacionais.
-
-## 👥 Contribuindo
-
-Contribuições são bem-vindas! Sinta-se à vontade para:
-- Reportar bugs
-- Sugerir novas funcionalidades
-- Melhorar a documentação
-- Enviar pull requests
-
-## 📞 Contato
-
-Para dúvidas ou sugestões, abra uma issue no repositório.
 
 ---
 

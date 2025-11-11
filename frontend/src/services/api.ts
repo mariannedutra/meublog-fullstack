@@ -2,9 +2,10 @@
  * Serviço de API
  *
  * Contém todas as funções para comunicação com o backend.
- * Cada função retorna uma Promise para facilitar o uso com async/await.
+ * Usamos axios para fazer as requisições HTTP de forma simples.
  */
 
+import axios from 'axios';
 import type { Postagem, NovaPostagem, AtualizarPostagem } from '../types';
 
 // URL base da API - ajuste se necessário
@@ -14,50 +15,24 @@ const API_URL = 'http://localhost:3000';
  * Busca todas as postagens
  */
 export const buscarPostagens = async (): Promise<Postagem[]> => {
-  const resposta = await fetch(`${API_URL}/postagens`);
-
-  if (!resposta.ok) {
-    throw new Error('Erro ao buscar postagens');
-  }
-
-  return resposta.json();
+  const resposta = await axios.get(`${API_URL}/postagens`);
+  return resposta.data;
 };
 
 /**
  * Busca uma postagem específica por ID
  */
 export const buscarPostagemPorId = async (id: number): Promise<Postagem> => {
-  const resposta = await fetch(`${API_URL}/postagens/${id}`);
-
-  if (!resposta.ok) {
-    if (resposta.status === 404) {
-      throw new Error('Postagem não encontrada');
-    }
-    throw new Error('Erro ao buscar postagem');
-  }
-
-  return resposta.json();
+  const resposta = await axios.get(`${API_URL}/postagens/${id}`);
+  return resposta.data;
 };
 
 /**
  * Cria uma nova postagem
  */
 export const criarPostagem = async (postagem: NovaPostagem): Promise<Postagem> => {
-  const resposta = await fetch(`${API_URL}/postagens`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(postagem),
-  });
-
-  if (!resposta.ok) {
-    const erro = await resposta.json();
-    throw new Error(erro.erro || 'Erro ao criar postagem');
-  }
-
-  const dados = await resposta.json();
-  return dados.postagem;
+  const resposta = await axios.post(`${API_URL}/postagens`, postagem);
+  return resposta.data.postagem;
 };
 
 /**
@@ -67,33 +42,13 @@ export const atualizarPostagem = async (
   id: number,
   postagem: AtualizarPostagem
 ): Promise<Postagem> => {
-  const resposta = await fetch(`${API_URL}/postagens/${id}`, {
-    method: 'PUT',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(postagem),
-  });
-
-  if (!resposta.ok) {
-    const erro = await resposta.json();
-    throw new Error(erro.erro || 'Erro ao atualizar postagem');
-  }
-
-  const dados = await resposta.json();
-  return dados.postagem;
+  const resposta = await axios.put(`${API_URL}/postagens/${id}`, postagem);
+  return resposta.data.postagem;
 };
 
 /**
  * Deleta uma postagem
  */
 export const deletarPostagem = async (id: number): Promise<void> => {
-  const resposta = await fetch(`${API_URL}/postagens/${id}`, {
-    method: 'DELETE',
-  });
-
-  if (!resposta.ok) {
-    const erro = await resposta.json();
-    throw new Error(erro.erro || 'Erro ao deletar postagem');
-  }
+  await axios.delete(`${API_URL}/postagens/${id}`);
 };

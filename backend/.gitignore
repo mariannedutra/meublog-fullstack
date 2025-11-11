@@ -1,11 +1,6 @@
 # Dependências
 node_modules/
 
-# Banco de dados SQLite
-*.db
-*.sqlite
-*.sqlite3
-
 # Logs
 logs
 *.log
