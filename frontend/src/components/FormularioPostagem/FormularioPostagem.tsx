@@ -4,7 +4,7 @@
  * Formulário reutilizável para criar e editar postagens.
  */
 
-import { useState, FormEvent } from 'react';
+import { useState, type FormEvent } from 'react';
 import Button from '../Button/Button';
 import './FormularioPostagem.css';
 
