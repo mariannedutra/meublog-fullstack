@@ -96,7 +96,7 @@ npm install
 npm start
 ```
 
-O backend estará rodando em: **http://localhost:3001**
+O backend estará rodando em: **http://localhost:3000**
 
 Para modo desenvolvimento com auto-reload:
 ```bash
@@ -152,7 +152,7 @@ Abra seu navegador e acesse: **http://localhost:5173**
 
 ### Listar Todas as Postagens
 ```http
-GET http://localhost:3001/postagens
+GET http://localhost:3000/postagens
 ```
 
 **Resposta de Sucesso (200):**
@@ -169,12 +169,12 @@ GET http://localhost:3001/postagens
 
 ### Buscar Postagem Específica
 ```http
-GET http://localhost:3001/postagens/:id
+GET http://localhost:3000/postagens/:id
 ```
 
 ### Criar Nova Postagem
 ```http
-POST http://localhost:3001/postagens
+POST http://localhost:3000/postagens
 Content-Type: application/json
 
 {
@@ -185,7 +185,7 @@ Content-Type: application/json
 
 ### Atualizar Postagem
 ```http
-PUT http://localhost:3001/postagens/:id
+PUT http://localhost:3000/postagens/:id
 Content-Type: application/json
 
 {
@@ -196,7 +196,7 @@ Content-Type: application/json
 
 ### Deletar Postagem
 ```http
-DELETE http://localhost:3001/postagens/:id
+DELETE http://localhost:3000/postagens/:id
 ```
 
 ## 🗄️ Estrutura do Banco de Dados
@@ -275,10 +275,10 @@ Formulário completo e validado para criar/editar postagens.
 ### O backend não inicia
 - Verifique se o Node.js está instalado: `node --version`
 - Certifique-se de ter executado `npm install` na pasta backend
-- Verifique se a porta 3001 não está em uso
+- Verifique se a porta 3000 não está em uso
 
 ### O frontend não se conecta ao backend
-- Verifique se o backend está rodando em http://localhost:3001
+- Verifique se o backend está rodando em http://localhost:3000
 - Confirme se o CORS está configurado corretamente
 - Verifique a URL da API em `frontend/src/services/api.ts`
 

@@ -8,7 +8,7 @@
 import type { Postagem, NovaPostagem, AtualizarPostagem } from '../types';
 
 // URL base da API - ajuste se necessário
-const API_URL = 'http://localhost:3001';
+const API_URL = 'http://localhost:3000';
 
 /**
  * Busca todas as postagens

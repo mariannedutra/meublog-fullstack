@@ -12,7 +12,7 @@ const postagensRoutes = require('./src/routes/postagens');
 
 // Criação da aplicação Express
 const app = express();
-const PORTA = 3001;
+const PORTA = 3000;
 
 // Middlewares
 app.use(cors()); // Permite requisições do frontend
