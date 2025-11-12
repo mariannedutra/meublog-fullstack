@@ -4,7 +4,7 @@ Frontend do projeto educacional de blog desenvolvido com React, Vite e TypeScrip
 
 ## 🚀 Tecnologias
 
-- **React 18**: Biblioteca JavaScript para construir interfaces
+- **React 19**: Biblioteca JavaScript para construir interfaces
 - **TypeScript**: JavaScript com tipagem estática
 - **Vite**: Build tool moderna e rápida
 - **React Router**: Navegação entre páginas
