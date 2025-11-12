@@ -22,7 +22,7 @@ Este projeto foi criado para ensinar:
 - **CORS**: Middleware para permitir requisições do frontend
 
 ### Frontend
-- **React 18**: Biblioteca para construção de interfaces de usuário
+- **React 19**: Biblioteca para construção de interfaces de usuário
 - **TypeScript**: JavaScript com tipagem estática para maior segurança
 - **Vite**: Build tool moderna e extremamente rápida
 - **React Router**: Biblioteca para navegação entre páginas
